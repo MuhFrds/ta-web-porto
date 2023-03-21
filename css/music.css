@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  background: #222;
+}
+
+.container .heading {
+  font-size: 3rem;
+  padding: 2rem 0;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 0 0.5rem 1rem #000;
+  color: white;
+}
+
+.container .music-container {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.container .music-container .box {
+  height: 16rem;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem #000;
+  overflow: hidden;
+  margin: 2rem;
+}
+.container .music-container .box .image {
+  height: 100%;
+  width: 25%;
+}
+.container .music-container .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container .music-container .box .music {
+  width: 75%;
+}
+.container .music-container .box .music audio {
+  width: 100%;
+  outline: none;
+}
+
+.container .music-container .box .music audio::-webkit-media-controls-enclosure {
+  background: none;
+}
+
+@media (max-width: 600px) {
+  .container .music-container .box {
+    height: 27rem;
+    width: 90%;
+    flex-flow: column;
+  }
+
+  .container .music-container .box .image {
+    height: 80%;
+    width: 100%;
+  }
+
+  .container .music-container .box .music {
+    height: 20%;
+    width: 100%;
+  }
+}

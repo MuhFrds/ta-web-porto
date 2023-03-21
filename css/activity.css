@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+:root {
+  --main-color: #e38528;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fcf2e8;
+  /* padding-left: 30rem; */
+}
+.heading {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+  color: #111;
+  text-transform: uppercase;
+  padding-top: 90px;
+  margin-left: 10px;
+}
+
+/* NAVBAR */
+
+nav .logo {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 70px;
+  padding-left: 110px;
+}
+nav {
+  height: 70px;
+  width: 100%;
+  background: #ff9900;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+  position: fixed;
+}
+
+nav ul {
+  float: right;
+  margin-right: 90px;
+}
+nav ul li {
+  display: inline-block;
+  font-weight: bold;
+}
+nav ul li a {
+  color: black;
+  display: block;
+  padding: 0 15px;
+  line-height: 70px;
+  font-size: 17px;
+  background: #ff9900;
+  transition: 0.5s;
+}
+nav ul li a:hover,
+nav ul li a.activ:hover {
+  color: white;
+}
+nav ul ul {
+  position: absolute;
+  top: 85px;
+  border-top: 2px solid black;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > ul {
+  top: 90px;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s linear;
+}
+nav ul ul li {
+  width: 150px;
+  display: list-item;
+  position: relative;
+  border: 2px solid black;
+  border-top: none;
+  list-style: none;
+}
+nav ul ul li a {
+  line-height: 50px;
+}
+nav ul ul ul {
+  border-top: none;
+}
+nav ul ul ul li {
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+nav ul ul li a i {
+  margin-left: 45px;
+}
+
+.portfolio .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+
+.portfolio .box-container .box {
+  flex: 1 1 30rem;
+  height: 25rem;
+  position: static;
+  overflow: hidden;
+  border: 1rem solid #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 0.5rem;
+}
+
+.portfolio .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  position: static;
+  z-index: 1;
+}
+
+.portfolio .box-container .box:hover img {
+  height: 75%;
+  width: 75%;
+}
+
+.portfolio .box-container .box h3 {
+  position: static;
+  /* bottom: 0.5rem; */
+  margin-top: 20px;
+  left: 1rem;
+  font-size: 2.5rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.portfolio .box-container .box .icons {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.portfolio .box-container .box .icons a {
+  display: block;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 0.5rem;
+  background: #eee;
+  color: #333;
+  font-size: 1.7rem;
+  line-height: 4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.portfolio .box-container .box .icons a:hover {
+  background: var(--main-color);
+  color: #fff;
+}
