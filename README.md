@@ -2,4 +2,4 @@
 
 tugas akhir membuat web portofolio penilaian akhir semester (PAS) 1 X PPLG 2
 
-2022
+kelas 10 semester 1 pas 2022
